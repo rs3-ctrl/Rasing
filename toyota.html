@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Racing - Toyota</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url(https://th.bing.com/th/id/R.1b7f86d822236d42703edadcf3d767d5?rik=1vgMsgZuVQtd5w&pid=ImgRaw&r=0);
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #333;
+    }
+
+    header {
+      background: rgba(26, 32, 44, 0.95);
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    nav a {
+      color: #ccc;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #00e6b8;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: rgba(255, 255, 255, 0.75);
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      animation: fadeIn 0.6s ease-in-out;
+    }
+
+    .container h2 {
+      margin-bottom: 1rem;
+      color: #2b6cb0;
+    }
+
+    .container p {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Estilos para galería y tarjetas de autos */
+    .car-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    .car-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 260px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .car-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .car-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-bottom: 3px solid #2b6cb0;
+      border-radius: 12px 12px 0 0;
+    }
+
+    .info {
+      padding: 1rem;
+    }
+
+    .info h3 {
+      color: #2b6cb0;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+      font-size: 1.1rem;
+    }
+
+    .info p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Racing</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="inventario.html">Ford</a>
+      <a href="bmw.html">BMW</a>
+      <a href="toyota.html" class="active">Toyota</a>
+      <a href="nissan.html">Nissan</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="section">
+      <h2>Tipo</h2>
+      <p>chingonas para subir elcerro de la cruz .</p>
+    </div>
+
+    <div class="section">
+      <h2>Precio</h2>
+      <p>Desde $1,200,000 MXN (modelo base).</p>
+    </div>
+
+    <div class="section">
+      <h2>Características</h2>
+      <ul>
+        <li>Motor con Turbo de 8 cilindros </li>
+        <li>Interiores de cuero premium </li>
+        <li>Sistema de navegavegacion satelital</li>
+        <li>Asistencia de estacionamiento y sensores 360°</li>
+        <li>Conectividad Apple CarPlay y Android Auto y plystore </li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Modelos toyota </h2>
+      <div class="car-gallery">
+         <div class="car-card">
+          <img src="https://i.blogs.es/5b984b/toyota-hilux_/1366_2000.jpg" alt="totoya hilux">
+          <div class="info">
+            <h3>totoya hilux</h3>
+            <p>4x4 y potente desempeño en el motor .</p>
+          </div>
+        </div>
+        <div class="car-card">
+          <img src="https://th.bing.com/th/id/OIP.xSsvxPpIOywjXcA6wKSNCgHaDg?rs=1&pid=ImgDetMain" alt="supra gr supra">
+          <div class="info">
+            <h3>supra gr supra</h3>
+            <p>con alto desempeño en su rendimiento </p>
+          </div>
+        </div>
+        <div class="car-card">
+          <img src="https://th.bing.com/th/id/OIP.wninEGz0kRTD23Zr7jNuYQHaC7?rs=1&pid=ImgDetMain">
+          <div class="info">
+            <h3>toyota 2001</h3>
+            <p>100% eléctrico y funcuonal</p>
+          </div>
+        </div>
+        <div class="car-card">
+          <img src="https://th.bing.com/th/id/OIP.mCq7EsVos49UfSjPUggREAHaEK?rs=1&pid=ImgDetMain" alt="toyota ">
+          <div class="info">
+            <h3>camioneta toyota </h3>
+            <p>4 x 4 ocho silindros </p>
+          </div>
+        </div>
+        <div class="car-card">
+          <img src="https://th.bing.com/th/id/OIP.HeON8VdBlWLY5a8mOFGgyQHaEn?rs=1&pid=ImgDetMain" alt="sapatito Toyota">
+          <div class="info">
+            <h3>sapatito toyota</h3>
+            <p>comodo de alto rendimiento, con una potencia impresionante y diseño agresivo.</p>
+          </div>
+        </div>
+        <div class="car-card">
+          <img src="https://th.bing.com/th/id/OIP.NoyYlFSytLCyRJ9UVhnqmgHaFj?rs=1&pid=ImgDetMain">
+          <div class="info">
+            <h3>toyota compacta </h3>
+            <p>totalmente eléctrico ofrece una presencia llamativa con su silueta de SUV coupé y el toyota  en la rejilla del radiador</p>
+          </div>
+        </div>
+        <div class="car-card">
+          <img src="https://th.bing.com/th/id/OIP.NPhtkfDFGwaYC0jAMHO57wHaFa?rs=1&pid=ImgDetMain">
+          <div class="info">
+            <h3>toyota 2005</h3>
+            <p>4 silindros,economica,comoda,eficiente 
+.</p>
+          </div>
+        </div>
+        <div class="car-card">
+          <img src="https://th.bing.com/th/id/OIP.ABYooLlxCsZWBSPol1-E6AHaEK?rs=1&pid=ImgDetMain">
+          <div class="info">
+            <h3>toyota supra rg</h3>
+            <p>elegante,rapido como el rayo juaquin</p>
+          </div>
+        </div>
+        <div class="car-card">
+          <img src="https://th.bing.com/th/id/OIP.iDValOtsqhG4c9d_G8FcVQHaEK?rs=1&pid=ImgDetMain">
+          <div class="info">
+            <h3>toyota 2025</h3>
+            <p>amplia comoda le cabe hasta una cama .</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

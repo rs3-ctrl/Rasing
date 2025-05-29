@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Racing - Toyota</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url(https://th.bing.com/th/id/R.1b7f86d822236d42703edadcf3d767d5?rik=1vgMsgZuVQtd5w&pid=ImgRaw&r=0);
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #333;
+    }
+
+    header {
+      background: rgba(26, 32, 44, 0.95);
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    nav a {
+      color: #ccc;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #00e6b8;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: rgba(255, 255, 255, 0.75);
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 0.6s ease-in-out;
+    }
+
+    .container h2 {
+      margin-bottom: 1rem;
+      color: #2b6cb0;
+    }
+
+    .container p {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
+    ul {
+      margin-left: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .car-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .car-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .car-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .car-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .car-card .info {
+      padding: 1rem;
+    }
+
+    .car-card h3 {
+      margin-bottom: 0.5rem;
+      color: #2b6cb0;
+    }
+
+    .car-card p {
+      font-size: 0.95rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Racing</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="inventario.html">Ford</a>
+      <a href="bmw.html">BMW</a>
+      <a href="toyota.html" class="active">Toyota</a>
+      <a href="nissan.html">Nissan</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="section">
+      <h2>Tipo</h2>
+      <p>Autos de alta calidad, mejorados y con una estética superior.</p>
+    </div>
+
+    <div class="section">
+      <h2>Precio</h2>
+      <p>Precios ajustables en todos nuestros modelos.</p>
+    </div>
+
+    <div class="section">
+      <h2>Características</h2>
+      <ul>
+        <li>Diseño moderno y funcional</li>
+        <li>Interiores mejorados</li>
+        <li>Alto rendimiento en los motores</li>
+        <li>Sistema de seguridad mejorado en modelos Ford</li>
+        <li>Mejores motores en toda nuestra línea de autos</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Modelos Ford</h2>
+      <div class="car-gallery">
+
+        <div class="car-card">
+          <img src="https://static1.topspeedimages.com/wordpress/wp-content/uploads/2023/09/1106516_11.jpeg" alt="Ford Mustang 67">
+          <div class="info">
+            <h3>Ford Mustang 67</h3>
+            <p>Diseño deportivo y potente desempeño.</p>
+          </div>
+        </div>
+
+        <div class="car-card">
+          <img src="https://www.800autotalk.com/wp-content/uploads/2024/02/pasted-image-0-2024-02-16T115614.175.jpg" alt="Ford Mustang GT500">
+          <div class="info">
+            <h3>Ford Mustang GT500</h3>
+            <p>Excelente equilibrio entre lujo y rendimiento.</p>
+          </div>
+        </div>
+
+        <div class="car-card">
+          <img src="https://image.hmn.com/MpSeguGq7oUHTdHfMLuB3albebk=/450x300/uimage/129360003.jpg" alt="Ford F250">
+          <div class="info">
+            <h3>Ford F250</h3>
+            <p>Modelo clásico con alto rendimiento de motor.</p>
+          </div>
+        </div>
+
+        <div class="car-card">
+          <img src="https://carrosbemmontados.com.br/wp-content/uploads/2023/09/2024-FORD-F-150-RAPTOR-3.jpg" alt="Ford Raptor F-150">
+          <div class="info">
+            <h3>Ford Raptor F-150</h3>
+            <p>Modelo lujoso con gran rendimiento todo terreno.</p>
+          </div>
+        </div>
+
+        <div class="car-card">
+          <img src="https://cdn.dealeraccelerate.com/worldwide/1/7633/473311/1920x1440/w/1986-ford-bronco" alt="Ford Bronco 86">
+          <div class="info">
+            <h3>Ford Bronco 86</h3>
+            <p>Camioneta con potencia impresionante y diseño agresivo.</p>
+          </div>
+        </div>
+
+        <div class="car-card">
+          <img src="https://tse4.mm.bing.net/th/id/OIP.m5VPnfF-KWef20CKMfApPwHaE6?rs=1&pid=ImgDetMain" alt="Ford Explorer Limited">
+          <div class="info">
+            <h3>Ford Explorer Limited</h3>
+            <p>Modelo lujoso, totalmente eléctrico y funcional.</p>
+          </div>
+        </div>
+
+        <div class="car-card">
+          <img src="https://media.autoexpress.co.uk/image/private/s--Apryk8S0--/v1562244557/autoexpress/2017/05/wdmp_170425_12510.jpg" alt="Ford GT 2017">
+          <div class="info">
+            <h3>Ford GT 2017</h3>
+            <p>Modelo deportivo, cilindraje alto y gran lujo.</p>
+          </div>
+        </div>
+
+        <div class="car-card">
+          <img src="https://www.ford.mx/content/dam/Ford/website-assets/latam/mx/open-graph/2020/nameplate/fmx-nameplate-ecosport-opengraph.jpg" alt="Ford EcoSport">
+          <div class="info">
+            <h3>Ford EcoSport</h3>
+            <p>Vehículo compacto, confiable y moderno.</p>
+          </div>
+        </div>
+
+        <div class="car-card">
+          <img src="https://tse3.mm.bing.net/th/id/OIP.YbbD5jTLGC-ZzImqr4Oc2QHaFj?rs=1&pid=ImgDetMain" alt="Ford Everest Wildtrak">
+          <div class="info">
+            <h3>Ford Everest Wildtrak</h3>
+            <p>Camioneta automática, elegante y potente.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

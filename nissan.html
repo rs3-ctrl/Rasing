@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Racing - Toyota</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url(https://th.bing.com/th/id/R.1b7f86d822236d42703edadcf3d767d5?rik=1vgMsgZuVQtd5w&pid=ImgRaw&r=0);
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #333;
+    }
+
+    header {
+      background: rgba(26, 32, 44, 0.95);
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    nav a {
+      color: #ccc;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #00e6b8;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: rgba(255, 255, 255, 0.75);
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      animation: fadeIn 0.6s ease-in-out;
+    }
+
+    .container h2 {
+      margin-bottom: 1rem;
+      color: #2b6cb0;
+    }
+
+    .container p {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Estilos para galería y tarjetas de autos */
+    .car-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    .car-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 260px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .car-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .car-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-bottom: 3px solid #2b6cb0;
+      border-radius: 12px 12px 0 0;
+    }
+
+    .info {
+      padding: 1rem;
+    }
+
+    .info h3 {
+      color: #2b6cb0;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+      font-size: 1.1rem;
+    }
+
+    .info p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Racing</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="inventario.html">Ford</a>
+      <a href="bmw.html">BMW</a>
+      <a href="toyota.html" class="active">Toyota</a>
+      <a href="nissan.html">Nissan</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="section">
+      <h2>Tipo</h2>
+      <p>Diseñado para combinar potencia, tecnología avanzada en sus modelos y bastante comodidad en la marca Nissan.</p>
+    </div>
+
+    <div class="section">
+      <h2>Precio</h2>
+      <p>Desde $1,200,000 MXN (modelo base).</p>
+    </div>
+
+    <div class="section">
+      <h2>Características</h2>
+      <ul>
+        <li>Tecnología avanzada y con mucha seguridad</li>
+        <li>Eficiencia en combustible</li>
+        <li>Diseño y comodidad</li>
+        <li>Motores eficientes</li>
+        <li>Sistema de climatización</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Modelos Nissan</h2>
+      <div class="car-gallery">
+         <div class="car-card">
+          <img src="https://th.bing.com/th/id/R.31b3b1c1bd0235562ffc4a248b8cba0d?rik=PRm85ZyP%2fwZ3Hg&pid=ImgRaw&r=0" alt="NISSAN GT-R" />
+          <div class="info">
+            <h3>NISSAN GT-R</h3>
+            <p>Elegante con un diseño deportivo y potente desempeño.</p>
+          </div>
+        </div>
+        <div class="car-card">
+          <img src="https://th.bing.com/th/id/OIP.561e2JtpFZ2qr-BE4yZjqgHaEZ?cb=iwc2&rs=1&pid=ImgDetMain" alt="NISSAN GTR-R34" />
+          <div class="info">
+            <h3>NISSAN GTR-R34</h3>
+            <p>Clásico con excelente equilibrio entre lujo y rendimiento.</p>
+          </div>
+        </div>
+        <div class="car-card">
+          <img src="https://th.bing.com/th/id/R.aa7dda6c9766638429b4b032b2437cdb?rik=dmtTC%2fx4dJcQfA&pid=ImgRaw&r=0" alt="NISSAN GT-R35" />
+          <div class="info">
+            <h3>NISSAN GT-R35</h3>
+            <p>Con la tecnología más avanzada de NISSAN.</p>
+          </div>
+        </div>
+        <div class="car-card">
+          <img src="https://th.bing.com/th/id/OIP.gMXEO0zNcvzmWylnzKHOxgHaEK?cb=iwc2&rs=1&pid=ImgDetMain" alt="NISSAN SILVA" />
+          <div class="info">
+            <h3>NISSAN SILVA</h3>
+            <p>Modelo super económico y con alto rendimiento.</p>
+          </div>
+        </div>
+        <div class="car-card">
+          <img src="https://th.bing.com/th/id/R.c42d18ea35df7c5378358a83bf4c4579?riu=http%3a%2f%2feskipaper.com%2fimages%2ftuning-car-nissan-350z-photo-1.jpg&ehk=YCzMtRyeDlYl3g4ljppeWxwYGcl7I%2fLK%2bSvh4%2bKLIJ4%3d&risl=&pid=ImgRaw&r=0" alt="NISSAN 350 Z" />
+          <div class="info">
+            <h3>NISSAN 350 Z</h3>
+            <p>Deportivo de alto rendimiento, con una potencia súper impresionante y con diseño agresivo.</p>
+          </div>
+        </div>
+        <div class="car-card">
+          <img src="https://th.bing.com/th/id/OIP.YPT5KE5tg0K4N8OkQWAYuQHaE8?cb=iwc2&rs=1&pid=ImgDetMain" alt="NISSAN SENTRA" />
+          <div class="info">
+            <h3>NISSAN SENTRA</h3>
+            <p>Con alto rendimiento en el motor y en todos sus aspectos.</p>
+          </div>
+        </div>
+        <div class="car-card">
+          <img src="https://i.ytimg.com/vi/5Elyc7k8OOI/maxresdefault.jpg" alt="Nissan Sentra Sunny" />
+          <div class="info">
+            <h3>NISSAN SENTRA SUNNY</h3>
+            <p>Con alto rendimiento en su motor y muy económico.</p>
+          </div>
+        </div>
+        <div class="car-card">
+          <img src="https://supercarblondie.com/wp-content/uploads/2024-Nissan-GT-R-Nismo-front.jpg" alt="Nissan GT-R Nismo" />
+          <div class="info">
+            <h3>NISSAN GT-R NISMO</h3>
+            <p>Un lujo para ofrecer una experiencia de conducción deportiva y exclusiva.</p>
+          </div>
+        </div>
+        <div class="car-card">
+          <img src="https://th.bing.com/th/id/R.b679ea505b62aceeb341fb4645dde206?rik=y4ufUnXw0ujcyA&pid=ImgRaw&r=0" alt="Nissan X Trail" />
+          <div class="info">
+            <h3>NISSAN X TRAIL</h3>
+            <p>Con un equipamiento mejorado en la marca Nissan.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Racing - Toyota</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url(https://th.bing.com/th/id/R.1b7f86d822236d42703edadcf3d767d5?rik=1vgMsgZuVQtd5w&pid=ImgRaw&r=0);
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #333;
+    }
+
+    header {
+      background: rgba(26, 32, 44, 0.95);
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    nav a {
+      color: #ccc;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #00e6b8;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: rgba(255, 255, 255, 0.75);
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      animation: fadeIn 0.6s ease-in-out;
+    }
+
+    .container h2 {
+      margin-bottom: 1rem;
+      color: #2b6cb0;
+    }
+
+    .container p {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Racing</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="inventario.html">Ford</a>
+      <a href="bmw.html">BMW</a>
+      <a href="toyota.html" class="active">Toyota</a>
+      <a href="nissan.html">Nissan</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Bienvenidos a Racing</h2>
+    <p>
+      En <strong>Racing</strong> nos apasionan los autos tanto como a ti. 
+      Somos una empresa dedicada a ofrecer vehículos de alta calidad, con atención personalizada, 
+      precios competitivos y opciones de financiamiento que se adaptan a tus necesidades.
+    </p>
+    <p>
+      Ya sea que estés buscando tu primer auto, cambiar el que ya tienes o simplemente quieres asesoría experta, 
+      en Racing encontrarás el acompañamiento ideal para tomar la mejor decisión. ¡Tu próximo auto está más cerca de lo que imaginas!
+    </p>
+  </div>
+
+</body>
+</html>
